@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+ 
+}
+#navbar{
+    background: #151110;
+}
+.nav{
+    display: flex;
+}
+
+.box-1{
+    display: flex;
+    align-items: center;
+    width: 900px;
+
+}
+.box-1 ul {
+    display: flex;
+    margin: 6px 12px;
+    padding: 0px 83px;
+}
+.box-1 ul li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 22px 34px;
+
+}
+.box-1 ul li i {
+ 
+    background: white;
+    transition: all 0.3s ease-in;
+}
+
+
+
+.box-1 ul li a {
+   text-decoration: none;
+   color: white;
+  font-family: 'Poppins', sans-serif;
+
+   font-weight: bolder;
+   letter-spacing: 0.06em;
+
+}
+.box-1 img{
+    width: 74px;
+    margin: 20px;
+    cursor: pointer;
+}
+.box-2{
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 27px;
+    align-items: center;
+    margin-right: 13px;
+}
+.box-2 img{
+    cursor: pointer;
+    width: 156px;
+}
+.fa-helmet-safety{
+          margin-right: 32px;
+}
+.fa-solid{
+    font-size: 25px;
+    color: white;
+}
+.fa-solid:hover{
+color: cyan;
+}
+ #main{
+    position: relative;
+    height: 900px;
+} 
+#main::before{
+    content: " ";
+    background: url("/img/abhishek-hajare-s1cIXdB6QRk-unsplash.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.help{
+    position: relative;
+    left: 38px;
+}
+
+.history{
+    max-width: 516px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+
+    justify-content: center;
+}
+.history h1{
+    font-size: 4rem;
+   font-family: 'Poppins', sans-serif;
+
+    font-weight: 900;
+    color: white;
+}
+.brief{
+    margin: 0px 0px 12px 0;
+  font-family: 'Poppins', sans-serif;
+
+   color: white;
+
+}
+.brief p{
+    padding-right: 98px;
+    font-weight: bolder;
+}
+
+.button{
+    margin-top: 10px;
+}
+
+.btn-1{
+
+    padding: 8px 20px;
+    margin: 0 14px 0px 0;
+    border-radius: 31px;
+    background: white;
+    color: black;
+    /* border: 3px solid cyan; */
+   font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s ease-in;
+}
+
+
+.btn-2{
+    padding: 5px 27px;
+    border-radius: 31px;
+    border: 3px solid #ffffff;
+    background: black;
+    color: white;
+   font-family: 'Poppins', sans-serif;
+   transition: all 0.3s ease-in;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.btn-1:hover{
+    background: black;
+    color: white;
+    border: 2px solid cyan;
+}
+.btn-2:hover{
+  
+    border: 3px solid cyan;
+}
+.icons{
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 175px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+  
+   
+}
+.fa-instagram{
+    font-size: 20px;
+
+}
+
+.fa-facebook-f{
+    font-size: 20px;
+}
+.fa-twitter{
+    font-size: 20px;
+}
+.icon{
+    margin: 52px 32px 0 0 ;
+    cursor: pointer;
+}
+.fa-brands{
+    font-weight: bolder;
+}
+.fa-brands:hover{
+    color: cyan;
+}
+
+@media(max-width:852px) {
+    *{
+        overflow:visible;
+    }
+    /* #navbar{
+        background-color: red;
+
+    } */
+    
+.box-1{
+    flex-direction: column;
+}
+.box-1 ul li{
+    margin: 22px 13px;
+}
+.box-1 ul{
+   
+   flex-direction: column;
+   align-items: center;
+}
+
+.history{
+    height: 742px;
+}
+.history h1{
+    font-size: 3.5rem;
+}
+.icons{
+    top: 236px;
+}
+}
+
+@media (max-width:280px) {
+    .fa-solid{
+        font-size: 20px;
+
+    }
+    .box-2 {
+    
+        right: 7px;
+      
+        margin-right: 6px;
+    }
+    .box-1 ul {
+        padding:0;
+        margin: 0;
+        }
+        .history{
+            margin-left: 19px;
+        }
+    .history h1{
+        font-size: 3rem;
+    }
+    .btn-1{
+        margin: 0 9px 0px 0;
+        padding: 8px 22px;
+    }
+    #main::before{
+        background-position: right;
+    }
+}
